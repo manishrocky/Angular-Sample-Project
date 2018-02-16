@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular QuickStart</title>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('main.js').catch(function (err) { console.error(err); });
+  </script>
+  <link rel="stylesheet" href="assets/css/prism-okaidia.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+    crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style media="screen">
+    .header {
+      background-color: #0143A3;
+      background: -webkit-linear-gradient(#0143A3, #0273D4);
+      background: linear-gradient(#0143A3, #0273D4);
+      color: #FFF;
+      padding: 30px;
+    }
+
+    section {
+      padding-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="bd-pageheader">
+    <h1>Heading Here</h1>
+  </main>
+  <my-app>Loading AppComponent content here ...</my-app>
+</body>
+
+</html>
